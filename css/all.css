@@ -1,0 +1,217 @@
+@charset "UTF-8";
+body{
+   font-family: font_ns, Verdana, Geneva, Tahoma, sans-serif;
+   background: url('../img/bg_content.gif');
+}
+
+*{
+   letter-spacing: -1px;
+}
+
+/* header 시작 */
+header{
+   border-bottom: 1px solid #ccc;
+   background-color: #fff;
+}
+
+.brand_color {
+   height: 5px;
+   background-color: #009223;
+}
+
+.inner{
+   width: 1280px;
+   margin: 0 auto;
+}
+
+.logo{
+   position: relative;
+   height: 90px;
+}
+
+.logo > h1 > a{
+   display: block;
+   width: 202px;
+   height: 40px;
+   line-height: 90px;
+   margin: 0 auto;
+   background: url("/img/logo.png");
+}
+
+.log_in{
+   position: absolute;
+   right: 50px;
+}
+
+.log_in ul{
+   display: flex;
+}
+
+.log_in ul > li{
+   color:#5a5a5a;
+   font-size: 13px;
+   line-height: 30px;
+}
+
+.log_in ul > li:first-child::after{
+   display: inline-block;
+   content: 'ㆍ';
+   margin: 0 5px;
+   color: #cacaca;
+}
+
+.global{
+   display: block;
+   width: 30px;
+   height: 30px;
+   background: url("../img/icon_utill_global.png");
+   margin-left: 10px;
+}
+
+nav{
+   height: 80px;
+   padding: 0 100px;
+}
+
+nav ul{
+   display: flex;
+   justify-content: space-around;
+   text-align: center;
+}
+
+nav > ul > li{
+   position: relative;
+   flex: 1;
+   line-height: 80px;
+   font-weight: bold;
+}
+
+.sub{
+   display: none;
+   position: absolute;
+   width: 100%;
+   background-color: #FFF;
+}
+
+.sub > ul{
+   display: flex;
+   flex-direction: column;
+}
+
+.sub > ul > li{
+   width: 100%;
+   line-height: 35px;
+}
+
+.sub > ul > li > a{
+   color: #5a5a5a;
+   font-size: 14px;
+}
+
+nav > ul > li > a:hover,
+.sub > ul > li > a:hover{
+   color: #009223;
+}
+
+/* header 끝 */
+
+/* footer 시작 */
+footer{
+   background-color: #292929;
+}
+
+.footer_top, 
+.footer_bottom{
+   padding-left: 50px;
+}
+
+.footer_top ul{
+   display: flex;
+}
+
+.footer_top ul li{
+   padding: 15px;
+}
+
+.footer_top ul li a{
+   color: #a7a7a7;
+   font-size: 13px;  
+}
+
+.footer_top ul li:nth-child(2) a{
+   color: #cacaca;
+   font-weight: bold;
+}
+
+footer::before{
+   position: relative;
+   display: block;
+   content: "";
+   height: 1px;
+   background-color: #a7a7a7;
+   top: 50px;
+}
+
+.footer_bottom{
+   position: relative;
+   height: 80px;
+   overflow: hidden;
+}
+
+.footer_bottom > div{
+   padding: 20px 0;
+}
+
+.addr{
+   display: flex;
+}
+
+.addr li,
+.footer_bottom > div > p{
+   color: #a7a7a7;
+   font-size: 13px;
+   line-height: 1.5;  
+}
+
+.addr li::after{
+   display: inline-block;
+   content: "|";
+   margin: 0 10px;
+}
+
+.addr li:last-of-type:after{
+   display: none;
+}
+
+.sns{
+   position: absolute;
+   height: 50px;
+   top: 50%;
+   right: 30px;
+   transform: translateY(-50%);
+}
+
+.sns > a{
+   display: block;
+   width: 50px;
+   height: 50px;
+   float: left;
+}
+
+.sns > a:first-child{
+   margin-right: 10px;
+   background: url('../img/icon_sns_instar.png') 0 0 no-repeat;
+}
+
+.sns > a:first-child:hover{
+   background: url('../img/icon_sns_instar.png') 100% 0 no-repeat;
+}
+
+.sns > a:last-child{
+   background: url('../img/icon_sns_facebook.png') 0 0 no-repeat;
+}
+
+.sns > a:last-child:hover{
+   background: url('../img/icon_sns_facebook.png') 100% 0 no-repeat;
+}
+/* footer 끝 */
