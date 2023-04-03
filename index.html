@@ -5,12 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUBWAY 써브웨이</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/basic.css">
   <link rel="stylesheet" href="css/all.css">
   <script src="js/prefixfree.min.js"></script>
   <script src="https://kit.fontawesome.com/60e0ae39cd.js" crossorigin="anonymous"></script>
   <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 <body>
@@ -97,25 +99,15 @@
   </header>
 
   <main>
-    <div id="slide_wrap">
-      <div id="slider">
-        <ul>
-          <li><a href="#"><img src="img/main1.jpg" alt=""></a></li>
-          <li><a href="#"><img src="img/main2.jpg" alt=""></a></li>
-          <li><a href="#"><img src="img/main3.jpg" alt=""></a></li>
-        </ul>   
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/main1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/main2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/main3.jpg" alt=""></div>
       </div>
-      <div class="main_inner">
-        <p class="dots"></p>
-      </div>
-      
-    </div>
-    
-    <div class="main_inner">
-      <div class="store_box">
-        <a href="#" class="store_search"><span>매장찾기</span></a>
-        <a href="#" class="store_qna"><span>가맹신청ㆍ문의</span></a>
-      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
   </main>
   
